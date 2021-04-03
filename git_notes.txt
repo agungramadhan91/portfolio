@@ -23,12 +23,15 @@
 # Branching
     # Melihat semua branch
         git branch
+        git branch --merged
     # Menambahkan branch
         git branch nama_branch
     # Pindah branch
         git checkout nama_branch
-    # Hapus branch
+    # Hapus branch sesudah di commit
         git branch -d nama_branch
+    # Hapus branch secara paksa
+        git branch -D nama_branch
 
 # Merging
     # Menggabungkan branch ke master (HEAD harus ada di master)
