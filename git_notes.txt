@@ -1,5 +1,8 @@
 # Git Command (untuk lokal)
-    git init | add | commit | status | config | branch | help
+    git [init | add | commit | status | config | branch | help]
+
+    # Tanda status git di editor VS Code
+        [U => Untracked | M => Modified]
 
 # menambahkan pemilik repo
     git config --global user.name "aeres hamada"
@@ -13,3 +16,4 @@
 
 # mengembalikan perubahan file style.css yg terlanjut di commit
     git checkout 99999 -- style.css
+
