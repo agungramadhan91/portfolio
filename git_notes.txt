@@ -34,6 +34,8 @@
         git branch -d nama_branch
     # Hapus branch secara paksa
         git branch -D nama_branch
+    # Mengganti nama branch
+        git branch -mv nama_lama nama_baru
 
 # Merging
     # Menggabungkan branch ke master (HEAD harus ada di master)
