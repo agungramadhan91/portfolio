@@ -1,0 +1,15 @@
+# Git Command (untuk lokal)
+    git init | add | commit | status | config | branch | help
+
+# menambahkan pemilik repo
+    git config --global user.name "aeres hamada"
+    git config --global user.email "aeres@hamada.com"
+
+# lihat perubahan 3 commit terakhir
+    git log -3
+
+# lihat perubahan file tertentu, contoh file "style.css"
+    git log -- style.css
+
+# mengembalikan perubahan file style.css yg terlanjut di commit
+    git checkout 99999 -- style.css
