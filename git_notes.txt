@@ -1,19 +1,35 @@
 # Git Command (untuk lokal)
-    git [init | add | commit | status | config | branch | help]
-
+    # Command yang tersedia untuk lokal
+        git [init | add | commit | status | config | branch | help]
     # Tanda status git di editor VS Code
         [U => Untracked | M => Modified]
 
-# menambahkan pemilik repo
+# Menambahkan pemilik repo
     git config --global user.name "aeres hamada"
     git config --global user.email "aeres@hamada.com"
 
-# lihat perubahan 3 commit terakhir
-    git log -3
+# Commiting:
+    # Perubahan 3 commit terakhir
+        git log -3
+    # File tertentu, contoh file "style.css"
+        git log -- style.css
+    # Alur commit dengan warna
+        git log --all --decorate --oneline --graph
+        # alias untuk command diatas
+            git_graph
+    # Mengembalikan File style.css yg terlanjur di commit
+        git checkout 99999 -- style.css
 
-# lihat perubahan file tertentu, contoh file "style.css"
-    git log -- style.css
+# Branching
+    # Melihat semua branch
+        git branch
+    # Menambahkan branch
+        git branch nama_branch
+    # Pindah branch
+        git checkout nama_branch
+    # Hapus branch
+        git branch -d nama_branch
 
-# mengembalikan perubahan file style.css yg terlanjut di commit
-    git checkout 99999 -- style.css
-
+# Merging
+    # Menggabungkan branch ke master (HEAD harus ada di master)
+        git merge nama_branch
