@@ -33,3 +33,6 @@
 # Merging
     # Menggabungkan branch ke master (HEAD harus ada di master)
         git merge nama_branch
+
+# Conflict Merging
+    # sdf
