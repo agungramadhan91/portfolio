@@ -17,8 +17,10 @@
         git log --all --decorate --oneline --graph
         # alias untuk command diatas
             git_graph
-    # Melihat File style.css yg terlanjur di commit
-        git checkout 7ChCommit -- style.css
+    # Melihat commit tertentu
+        git checkout xxxcommit(7 char)
+    # Melihat file tertentu pada commit tertentu 
+        git checkout xxxcommit -- style.css
 
 # Branching
     # Melihat semua branch
