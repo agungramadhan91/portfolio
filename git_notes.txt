@@ -38,8 +38,17 @@
 # Merging
     # Menggabungkan branch ke master (HEAD harus ada di master)
         git merge nama_branch
-
     # Conflict Merging
         - Atur source yang akan digunakan, lihat status untuk lebih jelas.
         - lakukan "git add ." dan "git commit"
 
+# Remoting
+    # Cek alamat remote
+        git remote -v
+    # Menambahkan alamat remote
+        git remote add origin https://xxxxxxxxxxxxxxxx
+    # Memindahkan file local ke remote
+        git push -u origin master
+            -u      => upstream
+            origin  => nama remote
+            master  => nama branch
